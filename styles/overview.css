@@ -1,0 +1,18 @@
+/*Stlying within the Overview Tab*/
+
+div.overview-grid-style{
+	padding: 1.5rem 2rem 2rem; 
+	margin-bottom: 1.5rem;	
+}
+
+i.overview-icon-style{
+	padding: 3rem 0.5rem 0rem 2rem;
+}
+
+label.overview-label-style{
+	font-family: "Lucida Grande", sans-serif;
+	/*font-family: "Lucida Sans Unicode", sans-serif;*/ 
+	font-size: 1.75rem; 
+	line-height: 25.7143px; 
+	font-weight: bold;
+}

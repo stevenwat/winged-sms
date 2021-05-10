@@ -1,0 +1,92 @@
+<md-dialog aria-label="Register Account Form" style="background-color:#428bca; margin-right:0rem;">
+	<md-dialog-content>
+		<form name="registerDialogForm" style="margin-bottom:0rem;">
+			<div class="md-dialog-content">
+				<div class="row" style="margin-top:1rem; margin-bottom: 2rem;">
+					<div class="col-sm-7">
+						<label class="register-user-label"><i class="fa fa-address-card-o button-icon" aria-hidden="true"></i> Register Account</label>
+					</div>
+				</div>				
+				<!-- <div class="row" style="margin-top:3rem;">
+					<div class="col-sm-6">
+						<label for="registerFirstName" class="register-user-label">
+							First name
+						</label>
+						<input type="text" class="register-user-input" name="registerFirstName" placeholder="First Name" id="registerFirstName">
+					</div>
+					<div class="col-sm-6">
+						<label for="registerSurname" class="register-user-label">
+							Surname
+						</label>
+						<input type="text" class="register-user-input" name="registerSurname" placeholder="Surname" id="registerSurname">
+					</div>
+				</div>	 -->
+				<div class="row">
+					<div class="col-sm-5">
+						<label for="registerUsername" class="register-user-label">
+							<i class="fa fa-user button-icon" aria-hidden="true"></i>
+							Username
+						</label>
+						<input type="text" class="register-user-input" name="registerUsername" placeholder="Username" id="registerUsername" ng-model="registerUsername" ng-pattern="/^[a-zA-Z \'\`]+$/" required>
+					</div>
+					<div class="col-sm-1" style="position: relative; top: 3.2rem; left: -2rem; opacity:0.2;">
+						<i class="fa fa-check-square bulk-customer-check-box" aria-hidden="true" ng-show=registerDialogForm.registerUsername.$valid></i>
+						<i class="fa fa-window-close bulk-customer-check-box" aria-hidden="true" ng-show=registerDialogForm.registerUsername.$invalid></i>
+					</div>
+					<div class="col-sm-5">
+						<label for="registerEmail" class="register-user-label">
+							<i class="fa fa-envelope button-icon" aria-hidden="true"></i>
+							Email
+						</label>
+						<input type="text" class="register-user-input" name="registerEmail" placeholder="Email" id="registerEmail" ng-model="registerEmail" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required>
+					</div>
+					<div class="col-sm-1" style="position: relative; top: 3.2rem; left: -2rem; opacity:0.2;">
+						<i class="fa fa-check-square bulk-customer-check-box" aria-hidden="true" ng-show=registerDialogForm.registerEmail.$valid></i>
+						<i class="fa fa-window-close bulk-customer-check-box" aria-hidden="true" ng-show=registerDialogForm.registerEmail.$invalid></i>
+					</div>
+				</div>					
+				<div class="row">
+					<div class="col-sm-5">
+						<label for="registerPassword" class="register-user-label">
+							<i class="fa fa-key button-icon" aria-hidden="true"></i>
+							Password
+						</label>
+						<input type="password" class="register-user-input" name="registerPassword" placeholder="Password" id="registerPassword" ng-model="registerPassword">
+					</div>
+					<!-- <div class="col-sm-1" style="position: relative; top: 3.2rem; left: -2rem; opacity:0.2;">
+						<i class="fa fa-check-square bulk-customer-check-box" aria-hidden="true" ng-show=registerDialogForm.registerPassword.$valid></i>
+						<i class="fa fa-window-close bulk-customer-check-box" aria-hidden="true" ng-show=registerDialogForm.registerPassword.$invalid></i>
+					</div> -->
+					<div class="col-sm-5" style="margin-left: 5rem;">
+						<label for="registerPassword" class="register-user-label">
+							<i class="fa fa-key button-icon" aria-hidden="true"></i>
+							Retype Password
+						</label>
+						<input type="password" class="register-user-input" name="registerPasswordSecond" placeholder="Password" id="registerPasswordSecond" ng-model="registerPasswordSecond">
+					</div>
+					<div class="col-sm-1" style="position: relative; top: 3.2rem; left: -2rem; opacity:0.2;">
+						<i class="fa fa-check-square bulk-customer-check-box" aria-hidden="true" ng-show=registerDialogForm.registerPasswordSecond.$valid></i>
+						<i class="fa fa-window-close bulk-customer-check-box" aria-hidden="true" ng-show=registerDialogForm.registerPasswordSecond.$invalid></i>
+					</div>				
+				</div>		
+				<div class="row">
+					<div class="col-sm-5">
+						<label for="registerMobile" class="register-user-label">
+							<i class="fa fa-phone button-icon" aria-hidden="true"></i>
+							Mobile
+						</label>
+						<input type="text" class="register-user-input" name="registerMobile" placeholder="Mobile" id="registerMobile" ng-model="registerMobile" ng-pattern="/^[0-9]{10,10}$/" required>
+					</div>
+					<div class="col-sm-1" style="position: relative; top: 3.2rem; left: -2rem; opacity:0.2;">
+						<i class="fa fa-check-square bulk-customer-check-box" aria-hidden="true" ng-show=registerDialogForm.registerMobile.$valid></i>
+						<i class="fa fa-window-close bulk-customer-check-box" aria-hidden="true" ng-show=registerDialogForm.registerMobile.$invalid></i>
+					</div>					
+				</div>						
+			</div>
+	        <div class="row" style="width:100%; display: block; margin-left: auto; margin-right: 4rem; margin-top:1rem; text-align:center;">
+				<span style="padding-right: 2.5rem"><md-button ng-click="closeRegisterDialog();" class="md-primary" style="">Close</md-button></span>
+			    <md-button ng-click="saveRegisterDialog();" class="md-primary">Save</md-button>         	
+	        </div>		
+		</form>
+	</md-dialog-content>
+</md-dialog>

@@ -1,0 +1,87 @@
+<!-- fa fa-window-close 
+fa fa-check-square
+Valid requires a form to use show
+-->
+<md-dialog aria-label="Add Recipient Bulk Dialog" style="background-color:#428bca; margin-right:0rem; margin-bottom:0rem;">
+	<md-dialog-content style="padding:0rem;"">
+		<form name="dialogform" style="margin-bottom:0rem;">
+			<div class="md-dialog-content bulk-dialog-div" style="color:white; background-color:#428bca; position:relative; margin:3rem;">
+				<div class="row" style="margin-bottom:2rem;">
+					<div class="col-sm-5">
+						<label for="bulkSurnameField" class="bulk-customer-add-dialog-label">
+							<i class="fa fa-id-card icon-size" aria-hidden="true"></i>  Surname:
+						</label>
+						<div class="input-group" style="width:100%;">
+							<input class="bulk-customer-add-dialog-input" type="text" ng-init="bulksurname=''" name="bulksurname" placeholder="Surname" id="bulkSurnameField" ng-model="bulksurname" ng-pattern="/^[a-zA-Z \'\`]+$/" required>
+						</div>			
+					</div>
+					<div class="col-sm-1" style="position: relative; top: 3.2rem; left: -2rem; opacity:0.2;">
+						<i class="fa fa-check-square bulk-customer-check-box" aria-hidden="true" ng-show=dialogform.bulksurname.$valid></i>
+						<i class="fa fa-window-close bulk-customer-check-box" aria-hidden="true" ng-show=dialogform.bulksurname.$invalid></i>
+					</div>
+					<div class="col-sm-5">
+						<label for="bulkFirstNameField" class="bulk-customer-add-dialog-label">
+							<i class="fa fa-id-card-o icon-size" aria-hidden="true"></i>  First Name:
+						</label>
+						<div class="input-group" style="width:100%;">
+							<input class="bulk-customer-add-dialog-input"  type="text" ng-init="bulkfirstname=''" name="bulkfirstname" placeholder="First Name" id="bulkFirstNameField" ng-model="bulkfirstname" ng-pattern="/^[a-zA-Z \'\`]+$/" required>
+						</div>			
+					</div>	
+					<div class="col-sm-1" style="position: relative; top: 3.2rem; left: -2rem; opacity:0.2;">
+						<i class="fa fa-check-square bulk-customer-check-box" aria-hidden="true" ng-show=dialogform.bulkfirstname.$valid></i>
+						<i class="fa fa-window-close bulk-customer-check-box" aria-hidden="true" ng-show=dialogform.bulkfirstname.$invalid></i>
+					</div>
+				</div>
+				<div class="row" style="margin-bottom:2rem;">		
+					<div class="col-sm-5">
+						<label for="bulkEmailField" class="bulk-customer-add-dialog-label">
+							<i class="fa fa-envelope-open-o icon-size" aria-hidden="true"></i>  Email:
+						</label>	
+						<div class="input-group" style="width:100%;">
+							<input class="bulk-customer-add-dialog-input" type="text" ng-init="bulkemail=''" name="bulkemail" placeholder="Email" id="bulkEmailField" ng-model="bulkemail" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" required>
+						</div>
+					</div>
+					<div class="col-sm-1" style="position: relative; top: 3.2rem; left: -2rem; opacity:0.2;">
+						<i class="fa fa-check-square bulk-customer-check-box" aria-hidden="true" ng-show=dialogform.bulkemail.$valid></i>
+						<i class="fa fa-window-close bulk-customer-check-box" aria-hidden="true" ng-show=dialogform.bulkemail.$invalid></i>
+					</div>
+					<div class="col-sm-5">
+						<label for="bulkMobileField" class="bulk-customer-add-dialog-label">
+							<i class="fa fa-phone icon-size" aria-hidden="true"></i>  Mobile:
+						</label>
+						<div class="input-group" style="width:100%;">
+							<input class="bulk-customer-add-dialog-input" type="text" ng-init="bulkmobile=''" name="bulkmobile" placeholder="Mobile" id="bulkMobileField" ng-model="bulkmobile" ng-pattern="/^[0-9]{10,10}$/" required>
+						</div>
+					</div>
+					<div class="col-sm-1" style="position: relative; top: 3.2rem; left: -2rem; opacity:0.2;">
+						<i class="fa fa-check-square bulk-customer-check-box" aria-hidden="true" ng-show=dialogform.bulkmobile.$valid></i>
+						<i class="fa fa-window-close bulk-customer-check-box" aria-hidden="true" ng-show=dialogform.bulkmobile.$invalid></i>
+					</div>
+				</div>
+				<div class="row" style="margin-bottom:1.9rem;">	
+					<div class="col-sm-6">
+						<label class="bulk-customer-add-dialog-label"><i class="fa fa-check-circle icon-size" aria-hidden="true"></i>  Subscribed: 
+						</label>
+						<input type="checkbox" name="bulksubscribed" id="bulkSubscribedField" name="bulkSubscribedField" ng-model="bulksubscribed" ng-init="bulksubscribed=false" style="color:grey; position: relative; top:0.3rem; left:5.4rem; width:2rem; height:2rem;">
+					</div>
+				</div>
+				<div class="row">	
+					<!-- <div class="col-sm-6" style="width:50%;">
+						<md-button id="bulk-close-button" ng-click="bulkCloseDialog();" style="height:4.1rem; border-radius: 0.4rem; width:78%;"> Close</md-button>
+					</div>
+					<div class="col-sm-6" style="width:50%;">
+						<md-button id="bulk-add-button" ng-click="bulkAddDialog()" style="height:4.1rem; border-radius: 0.4rem; width:78%;"> Add</md-button>
+					</div> -->
+					<div class="row" style="width:100%; display: block; margin-left: auto; margin-right: 4rem; margin-bottom: 0rem; text-align:center;">
+						<span style="padding-right: 1rem"><md-button ng-click="bulkCloseDialog();" class="md-primary" style="margin-right: 1.4rem;">  Close</md-button></span>
+			    		<md-button ng-click="bulkAddDialog();" class="md-primary">  Add</md-button>         	
+	        		</div>
+				</div>
+				<!-- <div class="row" style="width:100%; display: block; margin-left: auto; margin-right: 4rem; margin-bottom: 1rem; text-align:center;">
+					<span style="padding-right: 1rem"><md-button ng-click="bulkCloseDialog();" class="md-primary" style="">  Close</md-button></span>
+			    	<md-button ng-click="bulkAddDialog();" class="md-primary">  Add</md-button>         	
+	        	</div> -->	
+			</div>
+		</form>
+	</md-dialog-content>
+</md-dialog>

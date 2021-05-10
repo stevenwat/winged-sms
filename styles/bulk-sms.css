@@ -1,0 +1,162 @@
+/*Stlying within the Bulk Sms Tab*/
+
+/* Add Recipient Dialog Styling
+div.bulk-dialog-div{
+	color : white;
+	background-color: #428bca;
+	color : grey;	
+}*/
+
+.bulk-sms-container{
+	padding-left:20px; 
+	padding-right:20px; 
+	margin-bottom:5px;
+}
+
+.bulk-sms-first-row{
+	margin-bottom:10px;
+}
+
+.bulk-sms-drop-down-container{
+	width:100%;
+}
+
+#BulkAddCustomerListButton{
+	display:inline-block;
+	width: 32px; 
+	margin: 0px;
+	height: 35px;
+	padding-top: 0px;
+	border-bottom-width: 0px;
+	bottom: 0px;top: -14;
+	border-top-width: 0px;
+	padding-bottom: 0px;
+}
+
+#BulkAddRecipientButton{
+	display:inline-block;
+	width: 100%; 
+	height:100%; 
+	margin: 0px; 
+	border-radius: 0.4rem; 
+	border-bottom: 0.1rem;
+}
+
+#BulkClearDataGrid{
+	display:inline-block;
+	margin: 0rem; 
+	border-radius: 0.4rem; 
+	height:3.78rem; 
+	width:14rem;	
+}
+
+.bulk-sms-message-box-container{
+	margin-top: 3rem; 
+	top: -3rem;
+}
+
+#bulkmessagebox{
+	 height:6rem;
+	 margin-bottom: 1rem;
+}
+
+.bulk-sms-input span{
+	padding-top: 0px;
+	background-color:transparent;
+	border: transparent;
+	padding-left: 0px;
+	padding-right: 0px
+}
+
+.bulk-sms-input input{
+	margin-bottom: 0rem;
+	top: -1rem;
+	padding:0.6rem 1.2rem; 
+	width:100%; 
+	left: -10rem;
+	border-radius: 0.4rem; 
+	height:3.78rem;	
+}
+
+.bulk-sms-send-container button{
+	display:inline-block;
+	height:4.1rem; 
+	top:4.5rem; 
+	border-radius: 0.4rem;
+}
+
+input.bulk-dialog-input{
+	color : grey;
+}
+
+button.md-button{
+    font-family: "Lucida Grande", sans-serif;
+    font-weight: 700;
+    margin: 0 auto;
+    color: #3498db;
+    background-color: #fff;
+    text-align: center;
+    font-style: normal;
+    /*width: 50%;*/
+    border: 1px solid #2a7aaf;
+    border-width: 1px 1px 3px;
+    -webkit-transition-duration: 0.4s;
+}
+
+label.bulk-customerlist-label{
+	margin-bottom: 2rem;
+}
+
+#bulk-close-button:hover{
+	background: s#e8eeef;
+	background-color: #e8eeef;
+}
+
+#bulk-add-button:hover{
+	background: s#e8eeef;
+	background-color: #e8eeef;	
+}
+
+.bulk-sms-clear-grid-container{
+	float:right; 
+	margin-bottom: 1.8rem;	
+}
+
+.bulk-sms-grid-container{
+	margin-bottom: 0.8rem;
+}
+
+/*Bulk Dialog Add Customer*/
+input.bulk-customer-add-dialog-input{
+    font-family: "Lucida Grande", sans-serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 0.7rem;
+    width: 100%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+}
+
+label.bulk-customer-add-dialog-label{
+	color: white;
+	/*font-size: 1.6rem;*/
+    font-family: "Lucida Grande", sans-serif;
+    font-size: large;	
+}
+
+i.bulk-customer-check-box{
+	font-size: 3.8rem;
+	margin-top: -0.2rem;
+}
+
+

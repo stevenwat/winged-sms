@@ -1,0 +1,18 @@
+<md-dialog aria-label="My Dialog" style="color: #3498db; background-color: #3498db;">
+	<md-dialog-content style="padding:0.5rem;">
+		<!-- <div class="md-dialog-content container" style="margin:2em 2em 0em 2em; padding:2em; display:table"> -->
+		<!-- padding top right bottom left -->
+		<div class="md-dialog-content container" style="padding:2rem 2rem 0rem 2rem; display:table; margin-top: 1rem;">
+			<span class='dialog-list-title'><i class="fa fa-calendar-o button-icon" aria-hidden="true"></i>List:  {{contactlistdetails[0].ListName}}</span>  
+			<div class="dialog-contact-list-data-grid-style">	
+				<!-- <div id="grid1" ui-grid="{ data: tasks }" class="grid" style="color: black;"></div> -->
+				<!-- Removed the ng-if="!refresh" because the API can now be refresh via onRegisterApi: registerGridApiSec on the grid instantiation -->
+				<div id="grid4" ui-grid="gridContactListDetails" ui-grid-edit class="grid" style="color: black;"></div>
+			</div>				
+		</div>
+        <div class="row" style="width:100%; display: block; margin-left: auto; margin-right: 4rem; margin-bottom: 1rem; text-align:center;">
+			<span style="padding-right: 1rem"><md-button ng-click="closeDialog();" class="md-primary" style="">Close</md-button></span>
+		    <md-button ng-click="saveDialog();" class="md-primary">Save</md-button>         	
+         </div>
+	</md-dialog-content>
+</md-dialog>

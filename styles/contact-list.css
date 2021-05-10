@@ -1,0 +1,87 @@
+/*Stlying within the Contact List Tab*/
+
+label.contact-list-label-style{
+	/*font-family: "Lucida Sans Unicode", sans-serif;*/
+	font-family: "Lucida Grande", sans-serif; 
+	font-size:1.75rem; 
+	line-height: 25.7143px; 
+	font-weight: bold; 
+	margin-bottom: 2rem;
+}
+
+i.contact-list-icon-style{
+	padding: 3rem 0.5rem 0rem 2rem;
+	/*font-family: "Lucida Sans Unicode",sans-serif;
+	font-family: "Lucida Grande", sans-serif;*/ 
+}
+
+div.contact-list-button-container{
+	margin-left: 2rem;
+	position: relative; 
+	display: inline-block; 
+	float:right;
+}
+
+div.contact-list-data-grid-style{
+	padding: 0rem 2rem 0.4rem; 		/*top, (right, left), bottom*/
+	margin-bottom: 0.5rem;
+}
+
+div.dialog-contact-list-data-grid-style{
+	padding: 0rem 2rem 0.1rem; 		/*top, (right, left), bottom*/
+	margin-bottom: 1.5rem;
+	margin-top: 2rem;
+}
+
+md-dialog{
+	opacity: 1;
+}
+
+.contact-list-input-style input[type="text"]{
+    font-family: "Lucida Grande", sans-serif;
+    font-weight: 700;
+    /*margin: 0 auto;*/
+    color: #3498db;
+    background-color: #fff;
+    text-align: center;
+    font-style: normal;	
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: #3498db;
+    background-color: #fff;
+    text-align: center;
+    font-style: normal;	  
+    font-family: "Lucida Grande", sans-serif;
+    font-weight: 700;     
+    border-radius: 0.4rem;
+    font-size: 1.8rem;
+}
+
+span.dialog-list-title {
+	color: white;
+	font-family: "Lucida Grande", sans-serif;
+	font-weight: 700;
+	margin-left: 2.1rem;
+	font-size: 1.8rem;
+}
+
+.contact-list-header{
+	position:relative; 
+	top:0.2rem;
+}
+
+.contact-list-file-upload-button{
+	margin-right: 2rem; 
+	margin-bottom:1.8rem;
+}
+
+

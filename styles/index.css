@@ -1,0 +1,238 @@
+/*--------------------------Main Layout and Index Styling---------------------------*/
+
+.div-header-container legend{
+	border: none;
+	margin-bottom: 0.75em;	
+}
+.div-header-container .div-logon-button-style button,
+.div-header-container .div-logoff-button-style button{
+	border-radius: 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;	
+}
+
+body {
+	padding : 1rem;
+}
+
+a {
+	background-color: Gainsboro;
+}
+
+div.overlay {
+	background: #000000;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	opacity: 0.5;
+	display: none;
+	z-index: 110005;
+}
+
+div.borders-first{
+	margin-bottom: 4rem; 
+	border-radius: 0.8rem; 
+	border-style: solid;
+}
+
+/*--------------------------Header styling---------------------------*/
+i.icon-size{
+	font-size: 2.0rem;
+	padding-right: 0.5rem;
+	margin-left: 0.1rem;
+}
+
+div.div-header-container{
+	margin-bottom: 0px; 
+	padding-bottom: 0px;
+}
+
+div.div-title-style{
+	display: inline-block; 
+	position: relative; 
+	top: 1.5rem; 
+	left: 2rem; 
+	font-weight: bold;
+}
+
+div.div-logoff-button-style{
+	display: inline-block; 
+	position: relative; 
+	float:right; 
+	top:3rem;
+}
+
+div.div-logon-button-style{
+	display: inline-block; 
+	position: relative; 
+	float:right; 
+	top:3rem; 
+	margin-right: 1rem;	
+}
+
+/*--------------------------Navigation Button  styling---------------------------*/			
+#exTab1 .tab-content {
+	color : white;
+    background-color: #428bca;
+	padding : 0.5rem 1.5rem;
+}
+			
+/* remove border radius for the tab */
+#exTab1 .nav-pills > li > a {
+	border-radius: 0;
+}		
+	
+#exTab2 h3 {
+	color : white;
+	background-color: #428bca;
+	padding : 0.5rem 1.5rem;
+}
+
+/* change border radius for the tab , apply corners on top*/
+#exTab3 .nav-pills > li > a {
+	border-radius: 0.4rem;
+	/*width: 125%;
+	font-family: Lucida Sans Unicode;*/
+	font-size: 16px;
+  	/*background-color: Gainsboro;*/
+}
+
+#exTab3 .button-margins {
+	/*margin-left: 40px;*/
+}
+		
+img.img-winged-style{
+	width:9.6rem;
+	height:6.8rem;
+}
+
+#exTab3 .tab-content {
+	color : white;
+  	/*border-color: #428bca;*/
+  	background-color: #428bca;
+  	padding : 0.5rem 1rem;
+  	/*font-family: "Lucida Sans Unicode", sans-serif;*/
+  	font-family: "Lucida Grande", sans-serif;
+  	/*Add a box shadow around the tabbed content */
+  	/*box-shadow: 0.5px 0.5px 0.5px 0.5px #000;*/
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}  	
+		    
+/*--------------------------Data Grid styling---------------------------*/
+div.ui-grid-contents-wrapper {
+	height: 2rem;
+}
+
+div.ui-grid-viewport {
+	background-color: white;
+}
+
+/*--------------------------Footer styling---------------------------*/
+p.footer-add-padding  {
+	padding-left: 1rem;	
+}
+
+/*with two values top and bottom paddings */
+div.footer-inside {
+	padding: 0.2rem 0.2rem;
+	background-color: #ffffff;
+	border-radius: 0.4rem;
+}
+
+div.footer-outisde {
+   	background-color: #428bca;
+   	padding: 0.2rem 0.2rem;
+   	border-radius: 0.4rem;
+	/*overflow: hidden;*/
+}
+
+div.rounded-edges {
+	border-radius: 0.4rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+footer.grad1 {
+	/*#0860A9 <- original #5787af <- new*/
+    height: 200px;
+    background: #FFFFFF; /* For browsers that do not support gradients*/ 
+    background: -webkit-linear-gradient(#FFFFFF, #5787af); /* For Safari 5.1 to 6.0*/
+    background: -o-linear-gradient(#FFFFFF, #5787af); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FFFFFF, #5787af); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FFFFFF, #5787af); /* Standard syntax (must be last)*/ 
+}
+
+/*--------------------------Icon Button Styling---------------------------*/
+i.button-icon {
+	margin-right: 0.5rem;
+}
+
+/*--------------------------Register User Styling---------------------------*/
+label.register-user-label{
+	color: white;
+	/*font-size: 1.6rem;*/
+    font-family: "Lucida Grande", sans-serif;
+    font-size: large;	
+}
+
+input.register-user-input{
+    /*font-family: "Lucida Grande", sans-serif;*/
+    font: 400 15px Lato, sans-serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 16px;
+    margin: 0;
+    outline: 0;
+    padding: 0.7rem;
+    width: 100%;
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+}
+
+.main-container{
+	margin-bottom: 4rem; 
+	border-radius: 0.8rem;
+}
+
+/*Loading screen overlay*/
+.loading-screen{
+	layout:relative; 
+	position:fixed; 
+	top: 50%; 
+	left: 50%; 
+	transform: translate(-50%, -50%); 
+	z-index:110006;
+	color: rgb(00, 00, 00);	
+}
+
+/*Spinner for the loading screen*/
+.white-spinner{
+	color: white;
+}
+
+.footer-gradient{
+	right: 0; 
+	bottom: 0; 
+	left: 0; 
+	text-align: center; 
+	z-index: -1; 
+	margin-top: -4rem; 
+	width: 100%; 
+	position: fixed;	
+}
+
+/*Sets the colour of the body tag*/
+.transparent-bg{
+	background-color:transparent;
+}
